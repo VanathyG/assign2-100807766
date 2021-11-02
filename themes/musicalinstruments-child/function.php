@@ -9,7 +9,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
-function twentytwentyonechild_wp_enqueue_scripts() {
+function musicalinstrumentschild_wp_enqueue_scripts() {
     $parenthandle = 'twentytwentyone-style'; // This is 'twentytwentyone-style' for the Twenty Twenty One theme.
     $theme = wp_get_theme();
     wp_enqueue_style(
@@ -18,9 +18,9 @@ function twentytwentyonechild_wp_enqueue_scripts() {
         $theme->parent()->get('Version')
     );
     wp_enqueue_style(
-        'twentytwentyonechild-style', get_stylesheet_uri(),
+        'musicalinstrumentschild-style', get_stylesheet_uri(),
         array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
     );
 }
-add_action( 'wp_enqueue_scripts', 'twentytwentyonechild_wp_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'musicalinstrumentschild_wp_enqueue_scripts' );
