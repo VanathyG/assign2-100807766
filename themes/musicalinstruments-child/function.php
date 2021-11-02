@@ -24,3 +24,4 @@ function musicalinstrumentschild_wp_enqueue_scripts() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'musicalinstrumentschild_wp_enqueue_scripts' );
+
