@@ -1,0 +1,27 @@
+.main h1{
+    color:white;
+    font-weight: bolder;
+}
+
+p{
+    color:white;
+    text-align: justify;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:yellow;
+}
+
+.entry-header{
+    color:white;
+    text-align: center;
+}
+
+.entry-content{
+    align-items: center;
+}
+
