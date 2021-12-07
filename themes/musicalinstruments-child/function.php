@@ -22,6 +22,22 @@ function musicalinstrumentschild_wp_enqueue_scripts() {
         array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
     );
+
+      //!New foundation CSS style
+      wp_enqueue_style(
+        'foundation-style', 
+        get_stylesheet_directory_uri() . '/assets/css/vendor/foundation.min.css',
+    );
+
+      //!New custom CSS style
+      wp_enqueue_style(
+        'foundation-style', 
+        get_stylesheet_directory_uri() . '/assets/css/musical.css',
+    );
+
 }
 add_action( 'wp_enqueue_scripts', 'musicalinstrumentschild_wp_enqueue_scripts' );
+
+
+require get_stylesheet_directory() . '/inc/template-tags.php';
 
